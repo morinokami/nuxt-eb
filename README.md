@@ -41,11 +41,10 @@ $ cat .ebignore
 node_modules
 
 # Other stuffs
-$ vim .npmrc
 $ git add .
 $ git commit -m "Initial commit"
-$ npm run build
-$ npm run start:dev
+$ yarn build
+$ yarn start:dev
 $ eb init
 
 Select a default region
