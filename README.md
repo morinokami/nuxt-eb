@@ -2,6 +2,8 @@
 
 Nuxt.js deployed to Elastic Beanstalk
 
+## Build and deploy the app
+
 ```sh
 $ yarn create nuxt-app nuxt-eb
 ? Project name: nuxt-eb
@@ -17,7 +19,7 @@ $ yarn create nuxt-app nuxt-eb
 ? What is your GitHub username? shinya fujino
 ? Version control system: Git
 $ cd nuxt-eb
-$ vim package.json
+$ vim package.json # Add "--port $PORT" to the start command
 $ cat package.json
 {
   "name": "nuxt-eb",
@@ -102,6 +104,8 @@ Select a load balancer type
 $ eb open
 $ eb terminate
 ```
+
+## References
 
 - [Elastic Beanstalk concepts](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html)
 - [Install the EB CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html)
